@@ -12,7 +12,7 @@
         function savecast($castid,$castname,$dob,$biography,$roleid,$nationality,$gender,$socialmedialinks, $addedby,$profileimageurl){
             // check if cast exists
             if($this-> checkcast($castid,$castname)){
-                return ["status"=>"exists","message"=>"genre exists"];
+                return ["status"=>"exists","message"=>"cast exists"];
             }else{
                  $sql="CALL `sp_savecast`({$castid},'{$castname}','{$dob}','{$biography}',{$roleid},{$nationality},'{$gender}','{$socialmedialinks}',{$addedby},'{$profileimageurl}')";
                 $this->getData($sql);

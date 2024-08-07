@@ -12,8 +12,8 @@
         $gender=$_POST['gender'];
         $socialmedialinks=$_POST['socialmedialinks'];
         $addedby=$_POST['addedby'];
-        $profilemediaurl=$_POST['profilemediaurl'];
-        $response=$genre->savegenre($castid,$castname,$dob,$biography,$roleid,$nationality,
+        $profileimageurl=$_POST['profileimageurl'];
+        $response=$cast->savecast($castid,$castname,$dob,$biography,$roleid,$nationality,
                   $gender,$socialmedialinks,$addedby,$profileimageurl);
         echo json_encode($response);
     }
