@@ -22,7 +22,7 @@
 
     if(isset($_POST['deletegenre'])){
         $genreid=$_POST['genreid'];
-        $response=$genre->deletegenre($gerneid);
+        $response=$genre->deletegenre($genreid);
         echo json_encode($response);
     }
 
